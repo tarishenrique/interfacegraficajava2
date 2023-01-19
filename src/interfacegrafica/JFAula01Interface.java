@@ -15,6 +15,9 @@ public class JFAula01Interface extends javax.swing.JFrame {
      */
     public JFAula01Interface() {
         initComponents();
+        bGSexo.add(jRBFeminino);
+        bGSexo.add(jRBMasculino);
+        jRBMasculino.setSelected(true);
     }
 
     /**
@@ -26,21 +29,230 @@ public class JFAula01Interface extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        bGSexo = new javax.swing.ButtonGroup();
+        jPDadosPessoais = new javax.swing.JPanel();
+        jLNome = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLSexo = new javax.swing.JLabel();
+        jRBMasculino = new javax.swing.JRadioButton();
+        jRBFeminino = new javax.swing.JRadioButton();
+        jLEstado = new javax.swing.JLabel();
+        jCBEstado = new javax.swing.JComboBox<>();
+        jLEsporte = new javax.swing.JLabel();
+        JCBFutebol = new javax.swing.JCheckBox();
+        jCBVolei = new javax.swing.JCheckBox();
+        jCBBasquete = new javax.swing.JCheckBox();
+        jCBOutro = new javax.swing.JCheckBox();
+        jLComentario = new javax.swing.JLabel();
+        jScrollPaneComentarios = new javax.swing.JScrollPane();
+        jTextAreaComentario = new javax.swing.JTextArea();
+        jPDadosConta = new javax.swing.JPanel();
+        jlLogin = new javax.swing.JLabel();
+        jTLogin = new javax.swing.JTextField();
+        jlSenha = new javax.swing.JLabel();
+        jPSenha = new javax.swing.JPasswordField();
+        jBEnviar = new javax.swing.JButton();
+        jBLimpar = new javax.swing.JButton();
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPDadosPessoais.setBackground(new java.awt.Color(255, 255, 255));
+        jPDadosPessoais.setBorder(javax.swing.BorderFactory.createTitledBorder("Dados Pessoais"));
+        jPDadosPessoais.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+
+        jLNome.setText("Nome:");
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+
+        jLSexo.setText("Sexo");
+
+        jRBMasculino.setText("Masculino");
+
+        jRBFeminino.setText("Feminino");
+
+        jLEstado.setText("Estado");
+
+        jCBEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "BA", "AL", "CE", "SE", "PE", "PB", "RN", "MG", "RJ", "SP", " " }));
+
+        jLEsporte.setText("Esporte");
+
+        JCBFutebol.setText("Futebol");
+
+        jCBVolei.setText("Vôlei");
+
+        jCBBasquete.setText("Basquete");
+
+        jCBOutro.setText("Outro");
+
+        jLComentario.setText("Comentarios");
+
+        jTextAreaComentario.setColumns(20);
+        jTextAreaComentario.setRows(5);
+        jScrollPaneComentarios.setViewportView(jTextAreaComentario);
+
+        javax.swing.GroupLayout jPDadosPessoaisLayout = new javax.swing.GroupLayout(jPDadosPessoais);
+        jPDadosPessoais.setLayout(jPDadosPessoaisLayout);
+        jPDadosPessoaisLayout.setHorizontalGroup(
+            jPDadosPessoaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPDadosPessoaisLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPDadosPessoaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPDadosPessoaisLayout.createSequentialGroup()
+                        .addGroup(jPDadosPessoaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLNome)
+                            .addComponent(jLSexo)
+                            .addComponent(jLEstado)
+                            .addComponent(jLEsporte, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPDadosPessoaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField1)
+                            .addGroup(jPDadosPessoaisLayout.createSequentialGroup()
+                                .addGroup(jPDadosPessoaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jCBEstado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPDadosPessoaisLayout.createSequentialGroup()
+                                        .addComponent(jRBMasculino)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jRBFeminino)))
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(jPDadosPessoaisLayout.createSequentialGroup()
+                                .addComponent(JCBFutebol)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCBVolei)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCBBasquete)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jCBOutro))))
+                    .addGroup(jPDadosPessoaisLayout.createSequentialGroup()
+                        .addComponent(jLComentario)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPaneComentarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
+        );
+        jPDadosPessoaisLayout.setVerticalGroup(
+            jPDadosPessoaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPDadosPessoaisLayout.createSequentialGroup()
+                .addGroup(jPDadosPessoaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLNome)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPDadosPessoaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLSexo)
+                    .addComponent(jRBMasculino)
+                    .addComponent(jRBFeminino))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPDadosPessoaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jCBEstado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLEstado))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPDadosPessoaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(JCBFutebol)
+                    .addComponent(jLEsporte)
+                    .addComponent(jCBVolei)
+                    .addComponent(jCBBasquete)
+                    .addComponent(jCBOutro))
+                .addGroup(jPDadosPessoaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPDadosPessoaisLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLComentario)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPDadosPessoaisLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPaneComentarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
+        );
+
+        jPDadosConta.setBackground(new java.awt.Color(255, 255, 255));
+        jPDadosConta.setBorder(javax.swing.BorderFactory.createTitledBorder("Dados da Conta"));
+
+        jlLogin.setText("Login:");
+
+        jlSenha.setText("Senha:");
+
+        javax.swing.GroupLayout jPDadosContaLayout = new javax.swing.GroupLayout(jPDadosConta);
+        jPDadosConta.setLayout(jPDadosContaLayout);
+        jPDadosContaLayout.setHorizontalGroup(
+            jPDadosContaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPDadosContaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPDadosContaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jlLogin)
+                    .addComponent(jlSenha))
+                .addGap(18, 18, 18)
+                .addGroup(jPDadosContaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPSenha, javax.swing.GroupLayout.DEFAULT_SIZE, 137, Short.MAX_VALUE)
+                    .addComponent(jTLogin))
+                .addContainerGap())
+        );
+        jPDadosContaLayout.setVerticalGroup(
+            jPDadosContaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPDadosContaLayout.createSequentialGroup()
+                .addGroup(jPDadosContaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jlLogin)
+                    .addComponent(jTLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPDadosContaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jlSenha)
+                    .addComponent(jPSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 23, Short.MAX_VALUE))
+        );
+
+        jBEnviar.setText("Enviar");
+
+        jBLimpar.setText("Limpar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPDadosConta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPDadosPessoais, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(43, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jBLimpar)
+                .addGap(18, 18, 18)
+                .addComponent(jBEnviar)
+                .addGap(28, 28, 28))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addComponent(jPDadosPessoais, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(28, 28, 28)
+                .addComponent(jPDadosConta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(11, 11, 11)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jBEnviar)
+                    .addComponent(jBLimpar))
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +290,30 @@ public class JFAula01Interface extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JCheckBox JCBFutebol;
+    private javax.swing.ButtonGroup bGSexo;
+    private javax.swing.JButton jBEnviar;
+    private javax.swing.JButton jBLimpar;
+    private javax.swing.JCheckBox jCBBasquete;
+    private javax.swing.JComboBox<String> jCBEstado;
+    private javax.swing.JCheckBox jCBOutro;
+    private javax.swing.JCheckBox jCBVolei;
+    private javax.swing.JLabel jLComentario;
+    private javax.swing.JLabel jLEsporte;
+    private javax.swing.JLabel jLEstado;
+    private javax.swing.JLabel jLNome;
+    private javax.swing.JLabel jLSexo;
+    private javax.swing.JPanel jPDadosConta;
+    private javax.swing.JPanel jPDadosPessoais;
+    private javax.swing.JPasswordField jPSenha;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JRadioButton jRBFeminino;
+    private javax.swing.JRadioButton jRBMasculino;
+    private javax.swing.JScrollPane jScrollPaneComentarios;
+    private javax.swing.JTextField jTLogin;
+    private javax.swing.JTextArea jTextAreaComentario;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel jlLogin;
+    private javax.swing.JLabel jlSenha;
     // End of variables declaration//GEN-END:variables
 }
